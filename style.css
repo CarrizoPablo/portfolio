@@ -1,43 +1,61 @@
-body{
-
-font-family:sans-serif;
-background:#0f172a;
-color:white;
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.container{
-
-background:#1e293b;
-padding:30px;
-border-radius:10px;
-width:300px;
-
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0f172a;
+  color: white;
 }
 
-input{
-
-width:70%;
-padding:10px;
-
+/* NAVBAR */
+header {
+  padding: 20px 40px;
+  background: rgba(15, 23, 42, 0.8);
+  position: sticky;
+  top: 0;
 }
 
-button{
-
-padding:10px;
-
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-li{
-
-margin-top:10px;
-cursor:pointer;
-
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  padding: 100px 40px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 40px;
+}
+
+.hero h2 {
+  margin: 10px 0;
+  color: #00f7ff;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+/* BOTONES */
 .btn {
   display: inline-block;
   padding: 12px 20px;
@@ -45,28 +63,52 @@ cursor:pointer;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
 
-/* Botón principal */
 .btn {
   background: #00f7ff;
   color: #000;
 }
 
-/* Hover */
 .btn:hover {
   transform: scale(1.05);
-  opacity: 0.9;
 }
 
-/* Botón LinkedIn */
-.linkedin {
-  background: #0a66c2;
-  color: #fff;
-}
 .linkedin {
   background: linear-gradient(135deg, #0a66c2, #004182);
   color: #fff;
-  box-shadow: 0 0 10px rgba(10, 102, 194, 0.5);
+}
+
+/* SECCIONES */
+section {
+  padding: 60px 40px;
+}
+
+/* SKILLS */
+.skills {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #1e293b;
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+
+/* PROYECTOS */
+.project {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  opacity: 0.6;
 }
